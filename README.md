@@ -25,6 +25,15 @@ works.
 
 Problem 2:
 
+After first render:
+
+![RerenderOnResize](https://github.com/fneitzel/babylonjs_gui_4.1_issue/blob/master/img/firstRender.png)
+
+After RerenderOnResize expected output:
+
+![RerenderOnResize](https://github.com/fneitzel/babylonjs_gui_4.1_issue/blob/master/img/RerenderOnResize.png)
+
+
 `optionswrapper` is just appearing on rerender - WHY?:
 
 
