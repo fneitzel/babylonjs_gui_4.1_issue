@@ -59,6 +59,7 @@ class PageWithScene extends React.Component<{}, {}> {
     let sphere = new BABYLON.Mesh.CreateSphere("Sphere", 10.0, 9.0, scene);
     sphere.name = "THIS IS AN EXAMPLE SPHERE";
 
+    // TODO: Following line doesn't work with: import * as GUI from "@babylonjs/gui";
     var advancedTexture = GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
     //let advancedTexture = AdvancedDynamicTexture("test",width,height,scene);
     //let advancedTexture2 = advancedTexture.CreateFullscreenUI("test");
@@ -70,6 +71,7 @@ class PageWithScene extends React.Component<{}, {}> {
     optionswrapper.isVisible = true;
 
     advancedTexture.addControl(optionswrapper);
+    // TODO: optionwrapper is not displayed on initial render (rerender/resizing of browser shows the rectangle)
     optionswrapper.linkWithMesh(sphere);
 
     engine.runRenderLoop(() => {
