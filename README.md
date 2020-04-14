@@ -3,24 +3,33 @@ Created with CodeSandbox
 
 # react + babylonjs
 
-Problem 1:
-
 Examplecode to understand how `AdvancedDynamicTexture` works.
 
-This works:
+Problem 1:
 
-    import { AdvancedDynamicTexture } from "@babylonjs/gui";
-    let advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI("test", true, scene);
 
-This doesn't work:
+Documentation states:
 
-    import { AdvancedDynamicTexture } from "@babylonjs/gui";
-    let advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI("test");
+---------------------
+![RerenderOnResize](https://github.com/fneitzel/babylonjs_gui_4.1_issue/blob/master/img/dokuAdvancedTexture.png)
+---------------------
+This contrast with 2)
 
-This works as in the documentation described:
 
-    import { AdvancedDynamicTexture } from "babylonjs-gui";
-    let advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI("test");
+1) This works:
+
+        import { AdvancedDynamicTexture } from "@babylonjs/gui";
+        let advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI("test", true, scene);
+
+2) This doesn't work:
+
+        import { AdvancedDynamicTexture } from "@babylonjs/gui";
+        let advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI("test");
+
+3) This works as in the documentation described:
+
+        import { AdvancedDynamicTexture } from "babylonjs-gui";
+        let advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI("test");
 
 
 
